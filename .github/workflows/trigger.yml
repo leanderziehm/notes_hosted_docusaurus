@@ -1,0 +1,17 @@
+name: Triggered from Repo A
+
+on:
+  repository_dispatch:
+    types: [repo-a-updated]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Print payload
+        run: |
+          echo "Triggered by Repo A"
+          echo '${{ toJson(github.event.client_payload) }}'
