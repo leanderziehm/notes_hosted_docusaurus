@@ -16,6 +16,8 @@ for (const line of lines) {
       type: 'category',
       label: categoryMatch[1],
       items: [],
+      // collapsible: false,
+      collapsed: false,
     };
 
     items.push(currentCategory);
@@ -34,9 +36,32 @@ for (const line of lines) {
   }
 }
 
+
+function clean(items) {
+  return items
+    .map(itm => {
+      if (itm.type === 'category') {
+        const cleaned = {
+          ...itm,
+          items: clean(itm.items || []),
+        };
+        return cleaned;
+      }
+      return itm;
+    })
+    .filter(itm => {
+      if (itm.type !== 'category') return true;
+      return itm.items.length > 0;
+    });
+}
+
+const cleanedItems = clean(items);
+
+// items.filter(itm => itm.items.length > 0)
+
 const sidebar = `
 const sidebars = {
-  tutorialSidebar: ${JSON.stringify(items, null, 2)}
+  tutorialSidebar: ${JSON.stringify(cleanedItems, null, 2)}
 };
 
 export default sidebars;

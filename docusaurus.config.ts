@@ -16,6 +16,7 @@ const config: Config = {
   markdown: {
     format: 'md',
   },
+      plugins: [require.resolve('docusaurus-lunr-search')],
 
 
   // Set the production url of your site here
@@ -86,12 +87,10 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Notes',
-        // },
+        {
+        type: 'search',
+        position: 'left',
+      },
         {
           href: 'https://wordpress.leanderziehm.com',
           label: 'GitHub',
@@ -126,8 +125,9 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-    },
+    }
   } satisfies Preset.ThemeConfig,
 };
+
 
 export default config;
