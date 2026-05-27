@@ -4,14 +4,38 @@ on:
   repository_dispatch:
     types: [repo-a-updated]
 
+permissions:
+  contents: write   # required to push commits
+
 jobs:
   run:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          persist-credentials: true
 
-      - name: Print payload
+      - name: Update submodule
         run: |
-          echo "Triggered by Repo A"
-          echo '${{ toJson(github.event.client_payload) }}'
+          git submodule update --remote --recursive
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .
+          
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "chore: update submodule from Repo A trigger"
+
+      - name: Push changes
+        run: |
+          git push
