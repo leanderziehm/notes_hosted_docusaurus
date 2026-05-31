@@ -20,7 +20,7 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "programming-languages",
+    "label": "Programming-Languages",
     "items": [
       "programming-languages/typescript/README",
       "programming-languages/typescript/react/README",
@@ -33,9 +33,10 @@ const sidebars = {
       "programming-languages/java/README",
       "programming-languages/java/spring-boot",
       "programming-languages/python/README",
+      "programming-languages/python/setup",
+      "programming-languages/python/python-language-features",
       "programming-languages/python/memory-inspection",
-      "programming-languages/sql",
-      "programming-languages/other"
+      "programming-languages/sql"
     ],
     "collapsed": false
   },
@@ -46,7 +47,102 @@ const sidebars = {
       "system-administration/podman",
       "system-administration/nginx",
       "system-administration/firewall",
-      "system-administration/postgesql-on-linux"
+      "system-administration/postgesql-on-linux",
+      "system-administration/linux-commands",
+      "system-administration/install-packages"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
+    "label": "Terminal CLI Tools",
+    "items": [
+      "terminal-cli-tools/git",
+      "terminal-cli-tools/tmux",
+      "terminal-cli-tools/ssh",
+      "terminal-cli-tools/vim",
+      "terminal-cli-tools/bash",
+      "terminal-cli-tools/clis/README",
+      "terminal-cli-tools/clis/chmod",
+      "terminal-cli-tools/clis/find"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
+    "label": "Linux",
+    "items": [
+      "linux/linux-dev-setup",
+      "linux/network-devices",
+      "linux/linux-users",
+      "linux/virtualization",
+      "linux/suspend-mode",
+      "linux/linux-journal"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
+    "label": "cloud",
+    "items": [
+      "cloud/aws",
+      "cloud/azure",
+      "cloud/google-cloud-platform",
+      "cloud/oracle",
+      "cloud/cloudflare",
+      "cloud/supabase",
+      "cloud/github-actions"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
+    "label": "Data-Science",
+    "items": [
+      "data-science/coding",
+      "data-science/excel",
+      "data-science/forcasting",
+      "data-science/duckdb",
+      "data-science/etl",
+      "data-science/databricks",
+      "data-science/data-science-tools",
+      "data-science/bi-dashboard-tools"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
+    "label": "Networking",
+    "items": [
+      "networking/proxy-server",
+      "networking/reverse-proxy",
+      "networking/vpn",
+      "networking/dhcp",
+      "networking/nat",
+      "networking/dns",
+      "networking/firewall",
+      "networking/switching",
+      "networking/wi-fi-routers"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
+    "label": "Systems-Design",
+    "items": [
+      "systems-design/cache",
+      "systems-design/queue",
+      "systems-design/database"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
+    "label": "CS-Concepts",
+    "items": [
+      "cs-concepts/compilers",
+      "cs-concepts/errors",
+      "cs-concepts/input-validation"
     ],
     "collapsed": false
   },
@@ -54,17 +150,13 @@ const sidebars = {
     "type": "category",
     "label": "Security",
     "items": [
-      "security/cves"
-    ],
-    "collapsed": false
-  },
-  {
-    "type": "category",
-    "label": "Data Analytics",
-    "items": [
-      "data-analytics/coding",
-      "data-analytics/excel",
-      "data-analytics/forcasting"
+      "security/owasp",
+      "security/cves",
+      "security/access-controll",
+      "security/fuzzers-dast",
+      "security/security-testing",
+      "security/security-vulnerabilities",
+      "security/pentesting-tools"
     ],
     "collapsed": false
   },
@@ -94,51 +186,12 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "cloud",
-    "items": [
-      "cloud/aws",
-      "cloud/azure",
-      "cloud/google-cloud-platform"
-    ],
-    "collapsed": false
-  },
-  {
-    "type": "category",
     "label": "Databases",
     "items": [
       "databases/databases",
       "databases/database-migration",
       "databases/database-normalization",
       "databases/sqlite"
-    ],
-    "collapsed": false
-  },
-  {
-    "type": "category",
-    "label": "CLI Terminal",
-    "items": [
-      "cli-terminal/git",
-      "cli-terminal/tmux",
-      "cli-terminal/ssh",
-      "cli-terminal/vim",
-      "cli-terminal/clis",
-      "cli-terminal/bash"
-    ],
-    "collapsed": false
-  },
-  {
-    "type": "category",
-    "label": "Linux",
-    "items": [
-      "linux/install-software",
-      "linux/network-devices",
-      "linux/linux-package-managers",
-      "linux/linux-terminal-commands",
-      "linux/linux-users",
-      "linux/debian-package-sizes",
-      "linux/virtualization",
-      "linux/suspend-mode",
-      "linux/make-makefile"
     ],
     "collapsed": false
   },
@@ -163,6 +216,7 @@ const sidebars = {
     "type": "category",
     "label": "File-Formats",
     "items": [
+      "file-formats/makefile",
       "file-formats/yaml",
       "file-formats/json",
       "file-formats/html"
@@ -174,6 +228,10 @@ const sidebars = {
     "label": "World-Knowlege",
     "items": [
       "world-knowlege/geography",
+      "world-knowlege/languages/README",
+      "world-knowlege/languages/english",
+      "world-knowlege/languages/spanish",
+      "world-knowlege/languages/chinese",
       "world-knowlege/immune-system"
     ],
     "collapsed": false
