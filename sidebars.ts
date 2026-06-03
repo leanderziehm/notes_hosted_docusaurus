@@ -47,9 +47,7 @@ const sidebars = {
       "system-administration/podman",
       "system-administration/nginx",
       "system-administration/firewall",
-      "system-administration/postgesql-on-linux",
-      "system-administration/linux-commands",
-      "system-administration/install-packages"
+      "system-administration/postgesql-on-linux"
     ],
     "collapsed": false
   },
@@ -72,12 +70,17 @@ const sidebars = {
     "type": "category",
     "label": "Linux",
     "items": [
-      "linux/linux-dev-setup",
-      "linux/network-devices",
       "linux/linux-users",
-      "linux/virtualization",
-      "linux/suspend-mode",
-      "linux/linux-journal"
+      "linux/page-1",
+      "linux/page-2",
+      "linux/linux-file-paths",
+      "linux/linux-commands",
+      "linux/install-packages",
+      "linux/network-devices",
+      "linux/linux-journal",
+      "linux/other/README",
+      "linux/other/suspend-mode",
+      "linux/other/virtualization"
     ],
     "collapsed": false
   },
