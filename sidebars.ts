@@ -59,6 +59,7 @@ const sidebars = {
       "terminal-cli-tools/tmux",
       "terminal-cli-tools/ssh",
       "terminal-cli-tools/vim",
+      "terminal-cli-tools/nmap",
       "terminal-cli-tools/bash",
       "terminal-cli-tools/clis/README",
       "terminal-cli-tools/clis/chmod",
@@ -81,6 +82,23 @@ const sidebars = {
       "linux/other/README",
       "linux/other/suspend-mode",
       "linux/other/virtualization"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
+    "label": "Security",
+    "items": [
+      "security/owasp",
+      "security/cves",
+      "security/access-controll",
+      "security/fuzzers-dast",
+      "security/security-testing",
+      "security/security-vulnerabilities",
+      "security/pentesting-tools",
+      "security/web-enumeration/README",
+      "security/web-enumeration/nextcloud",
+      "security/self-hosted-software"
     ],
     "collapsed": false
   },
@@ -146,20 +164,6 @@ const sidebars = {
       "cs-concepts/compilers",
       "cs-concepts/errors",
       "cs-concepts/input-validation"
-    ],
-    "collapsed": false
-  },
-  {
-    "type": "category",
-    "label": "Security",
-    "items": [
-      "security/owasp",
-      "security/cves",
-      "security/access-controll",
-      "security/fuzzers-dast",
-      "security/security-testing",
-      "security/security-vulnerabilities",
-      "security/pentesting-tools"
     ],
     "collapsed": false
   },
