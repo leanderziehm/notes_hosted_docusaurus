@@ -96,9 +96,10 @@ const sidebars = {
       "security/security-testing",
       "security/security-vulnerabilities",
       "security/pentesting-tools",
-      "security/web-enumeration/README",
-      "security/web-enumeration/nextcloud",
-      "security/self-hosted-software"
+      "security/web-enumeration",
+      "security/self-hosted-software/README",
+      "security/self-hosted-software/nextcloud",
+      "security/authentication-vs-authorization"
     ],
     "collapsed": false
   },
