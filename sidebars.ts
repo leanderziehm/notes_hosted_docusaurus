@@ -233,6 +233,7 @@ const sidebars = {
       "world-knowlege/geography",
       "world-knowlege/languages/README",
       "world-knowlege/languages/english",
+      "world-knowlege/languages/latin",
       "world-knowlege/languages/spanish",
       "world-knowlege/languages/chinese",
       "world-knowlege/immune-system"
