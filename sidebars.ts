@@ -63,7 +63,8 @@ const sidebars = {
       "terminal-cli-tools/bash",
       "terminal-cli-tools/clis/README",
       "terminal-cli-tools/clis/chmod",
-      "terminal-cli-tools/clis/find"
+      "terminal-cli-tools/clis/find",
+      "terminal-cli-tools/clis/tar-zip"
     ],
     "collapsed": false
   },
@@ -199,7 +200,8 @@ const sidebars = {
       "databases/databases",
       "databases/database-migration",
       "databases/database-normalization",
-      "databases/sqlite"
+      "databases/sqlite",
+      "databases/mysql"
     ],
     "collapsed": false
   },
