@@ -30,6 +30,7 @@ const sidebars = {
       "programming-languages/typescript/testing",
       "programming-languages/typescript/angular",
       "programming-languages/typescript/astro",
+      "programming-languages/go",
       "programming-languages/java/README",
       "programming-languages/java/spring-boot",
       "programming-languages/python/README",
@@ -64,7 +65,8 @@ const sidebars = {
       "terminal-cli-tools/clis/README",
       "terminal-cli-tools/clis/chmod",
       "terminal-cli-tools/clis/find",
-      "terminal-cli-tools/clis/tar-zip"
+      "terminal-cli-tools/clis/tar-zip",
+      "terminal-cli-tools/clis/scp-rsync"
     ],
     "collapsed": false
   },
