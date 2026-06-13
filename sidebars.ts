@@ -49,16 +49,16 @@ const sidebars = {
     "items": [
       "linux/install-packages",
       "linux/page-2",
-      "linux/linux-users",
-      "linux/page-1",
-      "linux/linux-file-paths",
-      "linux/linux-commands",
-      "linux/network-devices",
       "linux/linux-journal",
+      "linux/linux-folders-and-logs",
+      "linux/linux-users",
+      "linux/network-devices",
+      "linux/linux-proxy",
+      "linux/linux-commands",
+      "linux/page-1",
       "linux/other/README",
       "linux/other/suspend-mode",
-      "linux/other/virtualization",
-      "linux/linux-proxy"
+      "linux/other/virtualization"
     ],
     "collapsed": false
   },
