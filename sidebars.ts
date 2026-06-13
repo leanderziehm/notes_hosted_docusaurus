@@ -11,15 +11,6 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "Design-Patterns",
-    "items": [
-      "design-patterns/design-patterns",
-      "design-patterns/ports-and-adapters"
-    ],
-    "collapsed": false
-  },
-  {
-    "type": "category",
     "label": "Programming-Languages",
     "items": [
       "programming-languages/typescript/README",
@@ -54,6 +45,25 @@ const sidebars = {
   },
   {
     "type": "category",
+    "label": "Linux",
+    "items": [
+      "linux/install-packages",
+      "linux/page-2",
+      "linux/linux-users",
+      "linux/page-1",
+      "linux/linux-file-paths",
+      "linux/linux-commands",
+      "linux/network-devices",
+      "linux/linux-journal",
+      "linux/other/README",
+      "linux/other/suspend-mode",
+      "linux/other/virtualization",
+      "linux/linux-proxy"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
     "label": "Terminal CLI Tools",
     "items": [
       "terminal-cli-tools/git",
@@ -72,19 +82,15 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "Linux",
+    "label": "cloud",
     "items": [
-      "linux/linux-users",
-      "linux/page-1",
-      "linux/page-2",
-      "linux/linux-file-paths",
-      "linux/linux-commands",
-      "linux/install-packages",
-      "linux/network-devices",
-      "linux/linux-journal",
-      "linux/other/README",
-      "linux/other/suspend-mode",
-      "linux/other/virtualization"
+      "cloud/aws",
+      "cloud/azure",
+      "cloud/google-cloud-platform",
+      "cloud/oracle",
+      "cloud/cloudflare",
+      "cloud/supabase",
+      "cloud/github-actions"
     ],
     "collapsed": false
   },
@@ -108,15 +114,13 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "cloud",
+    "label": "Databases",
     "items": [
-      "cloud/aws",
-      "cloud/azure",
-      "cloud/google-cloud-platform",
-      "cloud/oracle",
-      "cloud/cloudflare",
-      "cloud/supabase",
-      "cloud/github-actions"
+      "databases/databases",
+      "databases/database-migration",
+      "databases/database-normalization",
+      "databases/sqlite",
+      "databases/mysql"
     ],
     "collapsed": false
   },
@@ -163,19 +167,20 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "CS-Concepts",
+    "label": "Design-Patterns",
     "items": [
-      "cs-concepts/compilers",
-      "cs-concepts/errors",
-      "cs-concepts/input-validation"
+      "design-patterns/design-patterns",
+      "design-patterns/ports-and-adapters"
     ],
     "collapsed": false
   },
   {
     "type": "category",
-    "label": "Projects",
+    "label": "CS-Concepts",
     "items": [
-      "projects/project-personal-tracker"
+      "cs-concepts/compilers",
+      "cs-concepts/errors",
+      "cs-concepts/input-validation"
     ],
     "collapsed": false
   },
@@ -197,13 +202,9 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "Databases",
+    "label": "Projects",
     "items": [
-      "databases/databases",
-      "databases/database-migration",
-      "databases/database-normalization",
-      "databases/sqlite",
-      "databases/mysql"
+      "projects/project-personal-tracker"
     ],
     "collapsed": false
   },
