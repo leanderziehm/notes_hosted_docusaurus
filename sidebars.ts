@@ -28,6 +28,7 @@ const sidebars = {
       "programming-languages/python/setup",
       "programming-languages/python/python-language-features",
       "programming-languages/python/memory-inspection",
+      "programming-languages/python/package-managers",
       "programming-languages/sql"
     ],
     "collapsed": false
@@ -47,6 +48,7 @@ const sidebars = {
     "type": "category",
     "label": "Linux",
     "items": [
+      "linux/linux-commands",
       "linux/install-packages",
       "linux/page-2",
       "linux/linux-journal",
@@ -54,7 +56,6 @@ const sidebars = {
       "linux/linux-users",
       "linux/network-devices",
       "linux/linux-proxy",
-      "linux/linux-commands",
       "linux/page-1",
       "linux/other/README",
       "linux/other/suspend-mode",
