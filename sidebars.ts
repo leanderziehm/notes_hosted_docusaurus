@@ -40,7 +40,8 @@ const sidebars = {
       "system-administration/podman",
       "system-administration/nginx",
       "system-administration/firewall",
-      "system-administration/postgesql-on-linux"
+      "system-administration/postgesql-on-linux",
+      "system-administration/grafana-stack"
     ],
     "collapsed": false
   },
@@ -60,6 +61,23 @@ const sidebars = {
       "linux/other/README",
       "linux/other/suspend-mode",
       "linux/other/virtualization"
+    ],
+    "collapsed": false
+  },
+  {
+    "type": "category",
+    "label": "Networking",
+    "items": [
+      "networking/networking",
+      "networking/iso-model-vs-tcp-ip-model",
+      "networking/simulation-emulation",
+      "networking/vpn",
+      "networking/firewall",
+      "networking/proxies",
+      "networking/dhcp-nat",
+      "networking/hardware",
+      "networking/email-smtp-imap",
+      "networking/dns"
     ],
     "collapsed": false
   },
@@ -142,17 +160,15 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "Networking",
+    "label": "Application Layer",
     "items": [
-      "networking/proxy-server",
-      "networking/reverse-proxy",
-      "networking/vpn",
-      "networking/dhcp",
-      "networking/nat",
-      "networking/dns",
-      "networking/firewall",
-      "networking/switching",
-      "networking/wi-fi-routers"
+      "application-layer/graphql",
+      "application-layer/openapi",
+      "application-layer/media-types",
+      "application-layer/http/README",
+      "application-layer/http/http-status-codes",
+      "application-layer/http/http-methos",
+      "application-layer/http/http-headers-security"
     ],
     "collapsed": false
   },
@@ -182,22 +198,6 @@ const sidebars = {
       "cs-concepts/compilers",
       "cs-concepts/errors",
       "cs-concepts/input-validation"
-    ],
-    "collapsed": false
-  },
-  {
-    "type": "category",
-    "label": "Web-Specifications",
-    "items": [
-      "web-specifications/openapi",
-      "web-specifications/media-types",
-      "web-specifications/http/README",
-      "web-specifications/http/http-status-codes",
-      "web-specifications/http/http-methos",
-      "web-specifications/http/http-headers-security",
-      "web-specifications/email-smtp-imap",
-      "web-specifications/iso-model-vs-tcp-ip-model",
-      "web-specifications/graphql"
     ],
     "collapsed": false
   },
@@ -263,7 +263,8 @@ const sidebars = {
     "type": "category",
     "label": "AI",
     "items": [
-      "ai/ai-web-app-creators"
+      "ai/ai-web-app-creators",
+      "ai/voice-and-video"
     ],
     "collapsed": false
   }
