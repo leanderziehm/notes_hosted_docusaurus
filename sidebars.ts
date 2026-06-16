@@ -1,53 +1,108 @@
+/**
+ * AUTO-GENERATED FILE — DO NOT EDIT
+ */
 
-const sidebars = {
-  tutorialSidebar: [
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
+
+const sidebars: SidebarsConfig = {
+  docs: [
   {
     "type": "category",
     "label": "Welcome",
+    "collapsed": false,
     "items": [
-      "README"
-    ],
-    "collapsed": false
+      {
+        "type": "category",
+        "label": "Welcome to My Notes",
+        "collapsed": true,
+        "items": [],
+        "link": {
+          "type": "doc",
+          "id": "README"
+        }
+      }
+    ]
   },
   {
     "type": "category",
     "label": "Programming-Languages",
+    "collapsed": false,
     "items": [
-      "programming-languages/typescript/README",
-      "programming-languages/typescript/react/README",
-      "programming-languages/typescript/react/react-vs-html",
-      "programming-languages/typescript/javascript",
-      "programming-languages/typescript/node.js-express",
-      "programming-languages/typescript/testing",
-      "programming-languages/typescript/angular",
-      "programming-languages/typescript/astro",
+      {
+        "type": "category",
+        "label": "Typescript",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "React",
+            "collapsed": true,
+            "items": [
+              "programming-languages/typescript/react/react-vs-html"
+            ],
+            "link": {
+              "type": "doc",
+              "id": "programming-languages/typescript/react/README"
+            }
+          },
+          "programming-languages/typescript/javascript",
+          "programming-languages/typescript/node.js-express",
+          "programming-languages/typescript/testing",
+          "programming-languages/typescript/angular",
+          "programming-languages/typescript/astro"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "programming-languages/typescript/README"
+        }
+      },
       "programming-languages/go",
-      "programming-languages/java/README",
-      "programming-languages/java/spring-boot",
-      "programming-languages/python/README",
-      "programming-languages/python/setup",
-      "programming-languages/python/python-language-features",
-      "programming-languages/python/memory-inspection",
-      "programming-languages/python/package-managers",
+      {
+        "type": "category",
+        "label": "Java",
+        "collapsed": true,
+        "items": [
+          "programming-languages/java/spring-boot"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "programming-languages/java/README"
+        }
+      },
+      {
+        "type": "category",
+        "label": "Python",
+        "collapsed": true,
+        "items": [
+          "programming-languages/python/setup",
+          "programming-languages/python/python-language-features",
+          "programming-languages/python/memory-inspection",
+          "programming-languages/python/package-managers"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "programming-languages/python/README"
+        }
+      },
       "programming-languages/sql"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "System-Administration",
+    "collapsed": false,
     "items": [
       "system-administration/podman",
       "system-administration/nginx",
       "system-administration/firewall",
       "system-administration/postgesql-on-linux",
       "system-administration/grafana-stack"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Linux",
+    "collapsed": false,
     "items": [
       "linux/linux-commands",
       "linux/install-packages",
@@ -58,15 +113,25 @@ const sidebars = {
       "linux/network-devices",
       "linux/linux-proxy",
       "linux/page-1",
-      "linux/other/README",
-      "linux/other/suspend-mode",
-      "linux/other/virtualization"
-    ],
-    "collapsed": false
+      {
+        "type": "category",
+        "label": "Other",
+        "collapsed": true,
+        "items": [
+          "linux/other/suspend-mode",
+          "linux/other/virtualization"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "linux/other/README"
+        }
+      }
+    ]
   },
   {
     "type": "category",
     "label": "Networking",
+    "collapsed": false,
     "items": [
       "networking/networking",
       "networking/iso-model-vs-tcp-ip-model",
@@ -78,12 +143,12 @@ const sidebars = {
       "networking/hardware",
       "networking/email-smtp-imap",
       "networking/dns"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Terminal CLI Tools",
+    "collapsed": false,
     "items": [
       "terminal-cli-tools/git",
       "terminal-cli-tools/tmux",
@@ -91,17 +156,27 @@ const sidebars = {
       "terminal-cli-tools/vim",
       "terminal-cli-tools/nmap",
       "terminal-cli-tools/bash",
-      "terminal-cli-tools/clis/README",
-      "terminal-cli-tools/clis/chmod",
-      "terminal-cli-tools/clis/find",
-      "terminal-cli-tools/clis/tar-zip",
-      "terminal-cli-tools/clis/scp-rsync"
-    ],
-    "collapsed": false
+      {
+        "type": "category",
+        "label": "CLIs",
+        "collapsed": true,
+        "items": [
+          "terminal-cli-tools/clis/chmod",
+          "terminal-cli-tools/clis/find",
+          "terminal-cli-tools/clis/tar-zip",
+          "terminal-cli-tools/clis/scp-rsync"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "terminal-cli-tools/clis/README"
+        }
+      }
+    ]
   },
   {
     "type": "category",
     "label": "cloud",
+    "collapsed": false,
     "items": [
       "cloud/aws",
       "cloud/azure",
@@ -110,12 +185,12 @@ const sidebars = {
       "cloud/cloudflare",
       "cloud/supabase",
       "cloud/github-actions"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Security",
+    "collapsed": false,
     "items": [
       "security/owasp",
       "security/cves",
@@ -125,27 +200,37 @@ const sidebars = {
       "security/security-vulnerabilities",
       "security/pentesting-tools",
       "security/web-enumeration",
-      "security/self-hosted-software/README",
-      "security/self-hosted-software/nextcloud",
+      {
+        "type": "category",
+        "label": "Self-Hosted-Software",
+        "collapsed": true,
+        "items": [
+          "security/self-hosted-software/nextcloud"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "security/self-hosted-software/README"
+        }
+      },
       "security/authentication-vs-authorization"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Databases",
+    "collapsed": false,
     "items": [
       "databases/databases",
       "databases/database-migration",
       "databases/database-normalization",
       "databases/sqlite",
       "databases/mysql"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Data-Science",
+    "collapsed": false,
     "items": [
       "data-science/coding",
       "data-science/excel",
@@ -155,118 +240,137 @@ const sidebars = {
       "data-science/databricks",
       "data-science/data-science-tools",
       "data-science/bi-dashboard-tools"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Application Layer",
+    "collapsed": false,
     "items": [
       "application-layer/graphql",
       "application-layer/openapi",
       "application-layer/media-types",
-      "application-layer/http/README",
-      "application-layer/http/http-status-codes",
-      "application-layer/http/http-methos",
-      "application-layer/http/http-headers-security"
-    ],
-    "collapsed": false
+      {
+        "type": "category",
+        "label": "7 HTTP(S)",
+        "collapsed": true,
+        "items": [
+          "application-layer/http/http-status-codes",
+          "application-layer/http/http-methos",
+          "application-layer/http/http-headers-security"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "application-layer/http/README"
+        }
+      }
+    ]
   },
   {
     "type": "category",
     "label": "Systems-Design",
+    "collapsed": false,
     "items": [
       "systems-design/cache",
       "systems-design/queue",
       "systems-design/database"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Design-Patterns",
+    "collapsed": false,
     "items": [
       "design-patterns/design-patterns",
       "design-patterns/ports-and-adapters"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "CS-Concepts",
+    "collapsed": false,
     "items": [
       "cs-concepts/compilers",
       "cs-concepts/errors",
       "cs-concepts/input-validation"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Projects",
+    "collapsed": false,
     "items": [
       "projects/project-personal-tracker"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Problem Solving",
+    "collapsed": false,
     "items": [
       "problem-solving/problem-solving",
       "problem-solving/reasoning"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "HCI: Human Computer Interface",
+    "collapsed": false,
     "items": [
       "hci-human-computer-interface/latency-perception"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "File-Formats",
+    "collapsed": false,
     "items": [
       "file-formats/makefile",
       "file-formats/yaml",
       "file-formats/json",
       "file-formats/html"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "World-Knowlege",
+    "collapsed": false,
     "items": [
       "world-knowlege/geography",
-      "world-knowlege/languages/README",
-      "world-knowlege/languages/english",
-      "world-knowlege/languages/latin",
-      "world-knowlege/languages/spanish",
-      "world-knowlege/languages/chinese",
+      {
+        "type": "category",
+        "label": "Languages",
+        "collapsed": true,
+        "items": [
+          "world-knowlege/languages/english",
+          "world-knowlege/languages/latin",
+          "world-knowlege/languages/spanish",
+          "world-knowlege/languages/chinese"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "world-knowlege/languages/README"
+        }
+      },
       "world-knowlege/immune-system"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "Personal",
+    "collapsed": false,
     "items": [
       "personal/keyboard-shortcuts"
-    ],
-    "collapsed": false
+    ]
   },
   {
     "type": "category",
     "label": "AI",
+    "collapsed": false,
     "items": [
       "ai/ai-web-app-creators",
       "ai/voice-and-video"
-    ],
-    "collapsed": false
+    ]
   }
 ]
 };
