@@ -1,72 +1,98 @@
 import fs from 'fs';
 
-const summary = fs.readFileSync('./docs/SUMMARY.md', 'utf8');
+const inputFile = './docs/SUMMARY.md'//'./SUMMARY.md';
+const outputFile = './sidebars.ts';
 
-const lines = summary.split('\n');
+const content = fs.readFileSync(inputFile, 'utf8');
 
-const items = [];
-let currentCategory = null;
+// --- Helpers ---
+const cleanPath = (path) =>
+  path.replace('.md', '').replace(/^\.\//, '');
+
+const createCategory = (label, depth) => ({
+  type: 'category',
+  label,
+  collapsed: depth === 0 ? false : true,
+  items: [],
+});
+
+const createDoc = (path) => cleanPath(path);
+
+// --- Parse markdown ---
+const lines = content.split('\n');
+
+const root = [];
+const stack = [];
+
+let currentTopCategory = null;
 
 for (const line of lines) {
-  // Category
-  const categoryMatch = line.match(/^##\s+(.*)/);
+  // Match headings like: ## Programming-Languages
+  const headingMatch = line.match(/^##\s+(.*)/);
+  if (headingMatch) {
+    currentTopCategory = createCategory(headingMatch[1], 0);
+    root.push(currentTopCategory);
 
-  if (categoryMatch) {
-    currentCategory = {
-      type: 'category',
-      label: categoryMatch[1],
-      items: [],
-      // collapsible: false,
-      collapsed: false,
-    };
-
-    items.push(currentCategory);
+    stack.length = 0;
+    stack.push({ indent: -1, node: currentTopCategory });
     continue;
   }
 
-  // Markdown link
-  const linkMatch = line.match(/\* \[(.*?)\]\((.*?)\)/);
+  // Match list items like:
+  // * [Title](path)
+  const itemMatch = line.match(/^(\s*)\*\s+\[(.*?)\]\((.*?)\)/);
+  if (!itemMatch) continue;
 
-  if (linkMatch && currentCategory) {
-    const path = linkMatch[2]
-      .replace(/\.md$/, '');
-      // .replace(/README$/, 'index');
+  const indent = itemMatch[1].length;
+  const title = itemMatch[2];
+  const path = itemMatch[3];
 
-    currentCategory.items.push(path);
+  const isReadme = path.toLowerCase().includes('readme.md');
+
+  let node;
+
+  if (isReadme) {
+    // README becomes a category entry itself
+    node = createCategory(title, stack.length);
+    node.link = {
+      type: 'doc',
+      id: cleanPath(path),
+    };
+  } else {
+    node = createDoc(path);
+  }
+
+  // Find correct parent
+  while (stack.length > 0 && indent <= stack[stack.length - 1].indent) {
+    stack.pop();
+  }
+
+  const parent = stack[stack.length - 1]?.node;
+
+  if (parent && parent.items) {
+    parent.items.push(node);
+  }
+
+  // Only push categories to stack
+  if (node.type === 'category') {
+    stack.push({ indent, node });
   }
 }
 
+// --- Generate output ---
+const output = `/**
+ * AUTO-GENERATED FILE — DO NOT EDIT
+ */
 
-function clean(items) {
-  return items
-    .map(itm => {
-      if (itm.type === 'category') {
-        const cleaned = {
-          ...itm,
-          items: clean(itm.items || []),
-        };
-        return cleaned;
-      }
-      return itm;
-    })
-    .filter(itm => {
-      if (itm.type !== 'category') return true;
-      return itm.items.length > 0;
-    });
-}
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
-const cleanedItems = clean(items);
-
-// items.filter(itm => itm.items.length > 0)
-
-const sidebar = `
-const sidebars = {
-  tutorialSidebar: ${JSON.stringify(cleanedItems, null, 2)}
+const sidebars: SidebarsConfig = {
+  docs: ${JSON.stringify(root, null, 2)}
 };
 
 export default sidebars;
 `;
 
-fs.writeFileSync('./sidebars.ts', sidebar);
+fs.writeFileSync(outputFile, output);
 
-console.log('Generated sidebars.ts');
+console.log('Sidebar generated at:', outputFile);
