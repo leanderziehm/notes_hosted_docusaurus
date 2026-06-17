@@ -12,7 +12,7 @@ const cleanPath = (path) =>
 const createCategory = (label, depth) => ({
   type: 'category',
   label,
-  collapsed: depth === 0 ? false : true,
+  collapsed: true,//depth === 0 ? false : true,
   items: [],
 });
 
