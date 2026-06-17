@@ -9,7 +9,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Welcome",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       {
         "type": "category",
@@ -26,7 +26,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Programming-Languages",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       {
         "type": "category",
@@ -90,7 +90,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "System-Administration",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "system-administration/podman",
       "system-administration/nginx",
@@ -102,7 +102,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Linux",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "linux/linux-commands",
       "linux/install-packages",
@@ -131,7 +131,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Networking",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "networking/networking",
       "networking/iso-model-vs-tcp-ip-model",
@@ -148,7 +148,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Terminal CLI Tools",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "terminal-cli-tools/git",
       "terminal-cli-tools/tmux",
@@ -175,8 +175,8 @@ const sidebars: SidebarsConfig = {
   },
   {
     "type": "category",
-    "label": "cloud",
-    "collapsed": false,
+    "label": "Cloud",
+    "collapsed": true,
     "items": [
       "cloud/aws",
       "cloud/azure",
@@ -190,7 +190,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Security",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "security/owasp",
       "security/cves",
@@ -218,7 +218,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Databases",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "databases/databases",
       "databases/database-migration",
@@ -230,7 +230,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Data-Science",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "data-science/coding",
       "data-science/excel",
@@ -245,7 +245,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Application Layer",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "application-layer/graphql",
       "application-layer/openapi",
@@ -269,7 +269,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Systems-Design",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "systems-design/cache",
       "systems-design/queue",
@@ -279,7 +279,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Design-Patterns",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "design-patterns/design-patterns",
       "design-patterns/ports-and-adapters"
@@ -288,7 +288,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "CS-Concepts",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "cs-concepts/compilers",
       "cs-concepts/errors",
@@ -298,7 +298,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Projects",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "projects/project-personal-tracker"
     ]
@@ -306,7 +306,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Problem Solving",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "problem-solving/problem-solving",
       "problem-solving/reasoning"
@@ -315,7 +315,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "HCI: Human Computer Interface",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "hci-human-computer-interface/latency-perception"
     ]
@@ -323,7 +323,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "File-Formats",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "file-formats/makefile",
       "file-formats/yaml",
@@ -334,7 +334,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "World-Knowlege",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "world-knowlege/geography",
       {
@@ -358,7 +358,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "Personal",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "personal/keyboard-shortcuts"
     ]
@@ -366,7 +366,7 @@ const sidebars: SidebarsConfig = {
   {
     "type": "category",
     "label": "AI",
-    "collapsed": false,
+    "collapsed": true,
     "items": [
       "ai/ai-web-app-creators",
       "ai/voice-and-video"
