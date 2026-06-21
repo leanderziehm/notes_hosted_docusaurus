@@ -33,6 +33,7 @@ const sidebars: SidebarsConfig = {
         "label": "Typescript",
         "collapsed": true,
         "items": [
+          "programming-languages/typescript/node.js-express",
           {
             "type": "category",
             "label": "React",
@@ -46,7 +47,6 @@ const sidebars: SidebarsConfig = {
             }
           },
           "programming-languages/typescript/javascript",
-          "programming-languages/typescript/node.js-express",
           "programming-languages/typescript/testing",
           "programming-languages/typescript/angular",
           "programming-languages/typescript/astro"
@@ -125,7 +125,8 @@ const sidebars: SidebarsConfig = {
           "type": "doc",
           "id": "linux/other/README"
         }
-      }
+      },
+      "linux/linux-environment-variables"
     ]
   },
   {
