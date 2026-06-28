@@ -389,7 +389,7 @@ const sidebars: SidebarsConfig = {
     "label": "Eponymous-Laws",
     "collapsed": true,
     "items": [
-      "eponymous-laws/page-1"
+      "eponymous-laws/eponymous-laws"
     ]
   }
 ]
