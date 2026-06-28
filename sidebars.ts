@@ -25,6 +25,23 @@ const sidebars: SidebarsConfig = {
   },
   {
     "type": "category",
+    "label": "Full-Stack",
+    "collapsed": true,
+    "items": [
+      "full-stack/tech-stack"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Projects",
+    "collapsed": true,
+    "items": [
+      "projects/project-personal-tracker",
+      "projects/deployed-projects"
+    ]
+  },
+  {
+    "type": "category",
     "label": "Programming-Languages",
     "collapsed": true,
     "items": [
@@ -75,9 +92,9 @@ const sidebars: SidebarsConfig = {
         "collapsed": true,
         "items": [
           "programming-languages/python/setup",
+          "programming-languages/python/pip-and-uv",
           "programming-languages/python/python-language-features",
-          "programming-languages/python/memory-inspection",
-          "programming-languages/python/package-managers"
+          "programming-languages/python/memory-inspection"
         ],
         "link": {
           "type": "doc",
@@ -96,7 +113,8 @@ const sidebars: SidebarsConfig = {
       "system-administration/nginx",
       "system-administration/firewall",
       "system-administration/postgesql-on-linux",
-      "system-administration/grafana-stack"
+      "system-administration/grafana-stack",
+      "system-administration/elastic-search-elk-stack"
     ]
   },
   {
@@ -105,6 +123,7 @@ const sidebars: SidebarsConfig = {
     "collapsed": true,
     "items": [
       "linux/linux-workflow",
+      "linux/linux-ip",
       "linux/linux-commands",
       "linux/install-packages",
       "linux/linux-environment-variables",
@@ -117,7 +136,7 @@ const sidebars: SidebarsConfig = {
       "linux/page-1",
       {
         "type": "category",
-        "label": "Other",
+        "label": "Other Linux Topics",
         "collapsed": true,
         "items": [
           "linux/other/suspend-mode",
@@ -231,21 +250,6 @@ const sidebars: SidebarsConfig = {
   },
   {
     "type": "category",
-    "label": "Data-Science",
-    "collapsed": true,
-    "items": [
-      "data-science/coding",
-      "data-science/excel",
-      "data-science/forcasting",
-      "data-science/duckdb",
-      "data-science/etl",
-      "data-science/databricks",
-      "data-science/data-science-tools",
-      "data-science/bi-dashboard-tools"
-    ]
-  },
-  {
-    "type": "category",
     "label": "Application Layer",
     "collapsed": true,
     "items": [
@@ -299,10 +303,17 @@ const sidebars: SidebarsConfig = {
   },
   {
     "type": "category",
-    "label": "Projects",
+    "label": "Data-Science",
     "collapsed": true,
     "items": [
-      "projects/project-personal-tracker"
+      "data-science/coding",
+      "data-science/excel",
+      "data-science/forcasting",
+      "data-science/duckdb",
+      "data-science/etl",
+      "data-science/databricks",
+      "data-science/data-science-tools",
+      "data-science/bi-dashboard-tools"
     ]
   },
   {
