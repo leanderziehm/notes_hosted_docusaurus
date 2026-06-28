@@ -371,7 +371,17 @@ const sidebars: SidebarsConfig = {
     "collapsed": true,
     "items": [
       "ai/ai-web-app-creators",
-      "ai/voice-and-video"
+      "ai/voice-and-video",
+      "ai/ai-llms"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "OS",
+    "collapsed": true,
+    "items": [
+      "os/windows",
+      "os/android"
     ]
   }
 ]
