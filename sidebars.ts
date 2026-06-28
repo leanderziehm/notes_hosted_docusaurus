@@ -104,8 +104,10 @@ const sidebars: SidebarsConfig = {
     "label": "Linux",
     "collapsed": true,
     "items": [
+      "linux/linux-workflow",
       "linux/linux-commands",
       "linux/install-packages",
+      "linux/linux-environment-variables",
       "linux/page-2",
       "linux/linux-journal",
       "linux/linux-folders-and-logs",
@@ -125,8 +127,7 @@ const sidebars: SidebarsConfig = {
           "type": "doc",
           "id": "linux/other/README"
         }
-      },
-      "linux/linux-environment-variables"
+      }
     ]
   },
   {
