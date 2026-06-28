@@ -28,7 +28,9 @@ const sidebars: SidebarsConfig = {
     "label": "Full-Stack",
     "collapsed": true,
     "items": [
-      "full-stack/tech-stack"
+      "full-stack/tech-stack",
+      "full-stack/react",
+      "full-stack/node.js-express"
     ]
   },
   {
@@ -50,19 +52,6 @@ const sidebars: SidebarsConfig = {
         "label": "Typescript",
         "collapsed": true,
         "items": [
-          "programming-languages/typescript/node.js-express",
-          {
-            "type": "category",
-            "label": "React",
-            "collapsed": true,
-            "items": [
-              "programming-languages/typescript/react/react-vs-html"
-            ],
-            "link": {
-              "type": "doc",
-              "id": "programming-languages/typescript/react/README"
-            }
-          },
           "programming-languages/typescript/javascript",
           "programming-languages/typescript/testing",
           "programming-languages/typescript/angular",
@@ -393,6 +382,14 @@ const sidebars: SidebarsConfig = {
     "items": [
       "os/windows",
       "os/android"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Eponymous-Laws",
+    "collapsed": true,
+    "items": [
+      "eponymous-laws/page-1"
     ]
   }
 ]
