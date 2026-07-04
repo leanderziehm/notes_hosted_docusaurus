@@ -175,7 +175,8 @@ const sidebars: SidebarsConfig = {
           "terminal-cli-tools/clis/chmod",
           "terminal-cli-tools/clis/find",
           "terminal-cli-tools/clis/tar-zip",
-          "terminal-cli-tools/clis/scp-rsync"
+          "terminal-cli-tools/clis/scp-rsync",
+          "terminal-cli-tools/clis/pdf"
         ],
         "link": {
           "type": "doc",
