@@ -382,7 +382,18 @@ const sidebars: SidebarsConfig = {
     "collapsed": true,
     "items": [
       "os/windows",
-      "os/android"
+      {
+        "type": "category",
+        "label": "Android",
+        "collapsed": true,
+        "items": [
+          "os/android/android-app-termux"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "os/android/README"
+        }
+      }
     ]
   },
   {
