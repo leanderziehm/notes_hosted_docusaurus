@@ -197,99 +197,44 @@ const sidebars: SidebarsConfig = {
   },
   {
     "type": "category",
-    "label": "Cloud",
+    "label": "09-Security",
     "collapsed": true,
     "items": [
-      "cloud/aws",
-      "cloud/azure",
-      "cloud/google-cloud-platform",
-      "cloud/oracle",
-      "cloud/cloudflare",
-      "cloud/supabase",
-      "cloud/github-actions"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Security",
-    "collapsed": true,
-    "items": [
-      "security/owasp",
-      "security/cves",
-      "security/access-controll",
-      "security/fuzzers-dast",
-      "security/security-testing",
-      "security/security-vulnerabilities",
-      "security/pentesting-tools",
-      "security/web-enumeration",
+      "09-security/owasp",
+      "09-security/cves",
+      "09-security/access-controll",
+      "09-security/fuzzers-dast",
+      "09-security/security-testing",
+      "09-security/security-vulnerabilities",
+      "09-security/pentesting-tools",
+      "09-security/web-enumeration",
       {
         "type": "category",
         "label": "Self-Hosted-Software",
         "collapsed": true,
         "items": [
-          "security/self-hosted-software/nextcloud"
+          "09-security/self-hosted-software/nextcloud"
         ],
         "link": {
           "type": "doc",
-          "id": "security/self-hosted-software/README"
+          "id": "09-security/self-hosted-software/README"
         }
       },
-      "security/authentication-vs-authorization"
+      "09-security/authentication-vs-authorization"
     ]
   },
   {
     "type": "category",
-    "label": "Databases",
+    "label": "10-Cloud",
     "collapsed": true,
     "items": [
-      "databases/databases",
-      "databases/database-migration",
-      "databases/database-normalization",
-      "databases/sqlite",
-      "databases/mysql"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Application Layer",
-    "collapsed": true,
-    "items": [
-      "application-layer/graphql",
-      "application-layer/openapi",
-      "application-layer/media-types",
-      {
-        "type": "category",
-        "label": "7 HTTP(S)",
-        "collapsed": true,
-        "items": [
-          "application-layer/http/http-status-codes",
-          "application-layer/http/http-methos",
-          "application-layer/http/http-headers-security"
-        ],
-        "link": {
-          "type": "doc",
-          "id": "application-layer/http/README"
-        }
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Systems-Design",
-    "collapsed": true,
-    "items": [
-      "systems-design/cache",
-      "systems-design/queue",
-      "systems-design/database"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Design-Patterns",
-    "collapsed": true,
-    "items": [
-      "design-patterns/design-patterns",
-      "design-patterns/ports-and-adapters"
+      "10-cloud/aws",
+      "10-cloud/azure",
+      "10-cloud/google-cloud-platform",
+      "10-cloud/oracle",
+      "10-cloud/cloudflare",
+      "10-cloud/supabase",
+      "10-cloud/github-actions"
     ]
   },
   {
@@ -297,24 +242,111 @@ const sidebars: SidebarsConfig = {
     "label": "CS-Concepts",
     "collapsed": true,
     "items": [
+      "cs-concepts/databases",
       "cs-concepts/compilers",
       "cs-concepts/errors",
-      "cs-concepts/input-validation"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Data-Science",
-    "collapsed": true,
-    "items": [
-      "data-science/coding",
-      "data-science/excel",
-      "data-science/forcasting",
-      "data-science/duckdb",
-      "data-science/etl",
-      "data-science/databricks",
-      "data-science/data-science-tools",
-      "data-science/bi-dashboard-tools"
+      "cs-concepts/input-validation",
+      {
+        "type": "category",
+        "label": "File formats",
+        "collapsed": true,
+        "items": [
+          "cs-concepts/file-formats/makefile",
+          "cs-concepts/file-formats/yaml",
+          "cs-concepts/file-formats/json",
+          "cs-concepts/file-formats/html"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "cs-concepts/file-formats/README"
+        }
+      },
+      {
+        "type": "category",
+        "label": "Application Layer Protocolls",
+        "collapsed": true,
+        "items": [
+          "cs-concepts/application-layer-protocolls/openapi",
+          "cs-concepts/application-layer-protocolls/graphql",
+          "cs-concepts/application-layer-protocolls/media-types",
+          {
+            "type": "category",
+            "label": "7 HTTP(S)",
+            "collapsed": true,
+            "items": [
+              "cs-concepts/application-layer-protocolls/http/http-status-codes",
+              "cs-concepts/application-layer-protocolls/http/http-methos",
+              "cs-concepts/application-layer-protocolls/http/http-headers-security"
+            ],
+            "link": {
+              "type": "doc",
+              "id": "cs-concepts/application-layer-protocolls/http/README"
+            }
+          }
+        ],
+        "link": {
+          "type": "doc",
+          "id": "cs-concepts/application-layer-protocolls/README"
+        }
+      },
+      {
+        "type": "category",
+        "label": "System Design",
+        "collapsed": true,
+        "items": [
+          "cs-concepts/system-design/database",
+          "cs-concepts/system-design/cache",
+          "cs-concepts/system-design/queue"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "cs-concepts/system-design/README"
+        }
+      },
+      {
+        "type": "category",
+        "label": "Design-Patterns",
+        "collapsed": true,
+        "items": [
+          "cs-concepts/design-patterns/design-patterns",
+          "cs-concepts/design-patterns/ports-and-adapters"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "cs-concepts/design-patterns/README"
+        }
+      },
+      {
+        "type": "category",
+        "label": "HCI",
+        "collapsed": true,
+        "items": [
+          "cs-concepts/hci/latency-perception"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "cs-concepts/hci/README"
+        }
+      },
+      {
+        "type": "category",
+        "label": "Datascience",
+        "collapsed": true,
+        "items": [
+          "cs-concepts/datascience/coding",
+          "cs-concepts/datascience/excel",
+          "cs-concepts/datascience/forcasting",
+          "cs-concepts/datascience/duckdb",
+          "cs-concepts/datascience/etl",
+          "cs-concepts/datascience/databricks",
+          "cs-concepts/datascience/data-science-tools",
+          "cs-concepts/datascience/bi-dashboard-tools"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "cs-concepts/datascience/README"
+        }
+      }
     ]
   },
   {
@@ -324,25 +356,6 @@ const sidebars: SidebarsConfig = {
     "items": [
       "problem-solving/problem-solving",
       "problem-solving/reasoning"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "HCI: Human Computer Interface",
-    "collapsed": true,
-    "items": [
-      "hci-human-computer-interface/latency-perception"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "File-Formats",
-    "collapsed": true,
-    "items": [
-      "file-formats/makefile",
-      "file-formats/yaml",
-      "file-formats/json",
-      "file-formats/html"
     ]
   },
   {
