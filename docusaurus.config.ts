@@ -53,7 +53,8 @@ const config: Config = {
       {
         docs: {
           routeBasePath: '/',
-          // sidebarPath: './sidebars.ts',
+          sidebarPath: './sidebars.ts',
+          numberPrefixParser: false, 
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
