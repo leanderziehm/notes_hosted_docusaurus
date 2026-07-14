@@ -365,7 +365,18 @@ const sidebars: SidebarsConfig = {
     "label": "World-Knowlege",
     "collapsed": true,
     "items": [
-      "world-knowlege/geography",
+      {
+        "type": "category",
+        "label": "Geography",
+        "collapsed": true,
+        "items": [
+          "world-knowlege/geography/eu-europe"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "world-knowlege/geography/README"
+        }
+      },
       {
         "type": "category",
         "label": "Languages",
@@ -381,7 +392,8 @@ const sidebars: SidebarsConfig = {
           "id": "world-knowlege/languages/README"
         }
       },
-      "world-knowlege/immune-system"
+      "world-knowlege/immune-system",
+      "world-knowlege/historic-tool-invention"
     ]
   },
   {
