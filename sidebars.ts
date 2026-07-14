@@ -25,27 +25,27 @@ const sidebars: SidebarsConfig = {
   },
   {
     "type": "category",
-    "label": "Full-Stack",
+    "label": "01-Full-Stack",
     "collapsed": true,
     "items": [
-      "full-stack/tech-stack",
-      "full-stack/react",
-      "full-stack/node.js-express",
-      "full-stack/container-images"
+      "01-full-stack/tech-stack",
+      "01-full-stack/react",
+      "01-full-stack/node.js-express",
+      "01-full-stack/container-images"
     ]
   },
   {
     "type": "category",
-    "label": "Projects",
+    "label": "02-Projects",
     "collapsed": true,
     "items": [
-      "projects/project-personal-tracker",
-      "projects/deployed-projects"
+      "02-projects/project-personal-tracker",
+      "02-projects/deployed-projects"
     ]
   },
   {
     "type": "category",
-    "label": "Programming-Languages",
+    "label": "03-Programming-Languages",
     "collapsed": true,
     "items": [
       {
@@ -53,27 +53,27 @@ const sidebars: SidebarsConfig = {
         "label": "Typescript",
         "collapsed": true,
         "items": [
-          "programming-languages/typescript/javascript",
-          "programming-languages/typescript/testing",
-          "programming-languages/typescript/angular",
-          "programming-languages/typescript/astro"
+          "03-programming-languages/typescript/javascript",
+          "03-programming-languages/typescript/testing",
+          "03-programming-languages/typescript/angular",
+          "03-programming-languages/typescript/astro"
         ],
         "link": {
           "type": "doc",
-          "id": "programming-languages/typescript/README"
+          "id": "03-programming-languages/typescript/README"
         }
       },
-      "programming-languages/go",
+      "03-programming-languages/go",
       {
         "type": "category",
         "label": "Java",
         "collapsed": true,
         "items": [
-          "programming-languages/java/spring-boot"
+          "03-programming-languages/java/spring-boot"
         ],
         "link": {
           "type": "doc",
-          "id": "programming-languages/java/README"
+          "id": "03-programming-languages/java/README"
         }
       },
       {
@@ -81,116 +81,116 @@ const sidebars: SidebarsConfig = {
         "label": "Python",
         "collapsed": true,
         "items": [
-          "programming-languages/python/setup",
-          "programming-languages/python/pip-and-uv",
-          "programming-languages/python/python-language-features",
-          "programming-languages/python/memory-inspection"
+          "03-programming-languages/python/setup",
+          "03-programming-languages/python/pip-and-uv",
+          "03-programming-languages/python/python-language-features",
+          "03-programming-languages/python/memory-inspection"
         ],
         "link": {
           "type": "doc",
-          "id": "programming-languages/python/README"
+          "id": "03-programming-languages/python/README"
         }
       },
-      "programming-languages/sql"
+      "03-programming-languages/sql"
     ]
   },
   {
     "type": "category",
-    "label": "System-Administration",
+    "label": "04-System-Administration",
     "collapsed": true,
     "items": [
-      "system-administration/podman",
-      "system-administration/nginx",
-      "system-administration/firewall",
-      "system-administration/postgesql-on-linux",
-      "system-administration/grafana-stack",
-      "system-administration/elastic-search-elk-stack"
+      "04-system-administration/podman",
+      "04-system-administration/nginx",
+      "04-system-administration/firewall",
+      "04-system-administration/postgesql-on-linux",
+      "04-system-administration/grafana-stack",
+      "04-system-administration/elastic-search-elk-stack"
     ]
   },
   {
     "type": "category",
-    "label": "Linux",
+    "label": "05-Linux",
     "collapsed": true,
     "items": [
-      "linux/linux-workflow",
-      "linux/linux-ip",
-      "linux/linux-commands",
-      "linux/install-packages",
-      "linux/linux-environment-variables",
-      "linux/page-2",
-      "linux/linux-journal",
-      "linux/linux-folders-and-logs",
-      "linux/linux-users",
-      "linux/network-devices",
-      "linux/linux-proxy",
-      "linux/page-1",
+      "05-linux/linux-workflow",
+      "05-linux/linux-ip",
+      "05-linux/linux-commands",
+      "05-linux/install-packages",
+      "05-linux/linux-environment-variables",
+      "05-linux/page-2",
+      "05-linux/linux-journal",
+      "05-linux/linux-folders-and-logs",
+      "05-linux/linux-users",
+      "05-linux/network-devices",
+      "05-linux/linux-proxy",
+      "05-linux/page-1",
       {
         "type": "category",
         "label": "Other Linux Topics",
         "collapsed": true,
         "items": [
-          "linux/other/suspend-mode",
-          "linux/other/virtualization"
+          "05-linux/other/suspend-mode",
+          "05-linux/other/virtualization"
         ],
         "link": {
           "type": "doc",
-          "id": "linux/other/README"
+          "id": "05-linux/other/README"
         }
       },
-      "linux/linux-process-memory",
-      "linux/linux-encryption-secrets-passwords"
+      "05-linux/linux-process-memory",
+      "05-linux/linux-encryption-secrets-passwords"
     ]
   },
   {
     "type": "category",
-    "label": "Reverse-Engineering",
+    "label": "06-Reverse-Engineering",
     "collapsed": true,
     "items": [
-      "reverse-engineering/ghidra"
+      "06-reverse-engineering/ghidra"
     ]
   },
   {
     "type": "category",
-    "label": "Networking",
+    "label": "07-Networking",
     "collapsed": true,
     "items": [
-      "networking/networking",
-      "networking/iso-model-vs-tcp-ip-model",
-      "networking/simulation-emulation",
-      "networking/vpn",
-      "networking/firewall",
-      "networking/proxies",
-      "networking/dhcp-nat",
-      "networking/hardware",
-      "networking/email-smtp-imap",
-      "networking/dns"
+      "07-networking/networking",
+      "07-networking/iso-model-vs-tcp-ip-model",
+      "07-networking/simulation-emulation",
+      "07-networking/vpn",
+      "07-networking/firewall",
+      "07-networking/proxies",
+      "07-networking/dhcp-nat",
+      "07-networking/hardware",
+      "07-networking/email-smtp-imap",
+      "07-networking/dns"
     ]
   },
   {
     "type": "category",
-    "label": "Terminal CLI Tools",
+    "label": "08-Terminal CLI Tools",
     "collapsed": true,
     "items": [
-      "terminal-cli-tools/git",
-      "terminal-cli-tools/tmux",
-      "terminal-cli-tools/ssh",
-      "terminal-cli-tools/vim",
-      "terminal-cli-tools/nmap",
-      "terminal-cli-tools/bash",
+      "08-terminal-cli-tools/git",
+      "08-terminal-cli-tools/tmux",
+      "08-terminal-cli-tools/ssh",
+      "08-terminal-cli-tools/vim",
+      "08-terminal-cli-tools/nmap",
+      "08-terminal-cli-tools/bash",
       {
         "type": "category",
         "label": "CLIs",
         "collapsed": true,
         "items": [
-          "terminal-cli-tools/clis/chmod",
-          "terminal-cli-tools/clis/find",
-          "terminal-cli-tools/clis/tar-zip",
-          "terminal-cli-tools/clis/scp-rsync",
-          "terminal-cli-tools/clis/pdf"
+          "08-terminal-cli-tools/clis/chmod",
+          "08-terminal-cli-tools/clis/find",
+          "08-terminal-cli-tools/clis/tar-zip",
+          "08-terminal-cli-tools/clis/scp-rsync",
+          "08-terminal-cli-tools/clis/pdf"
         ],
         "link": {
           "type": "doc",
-          "id": "terminal-cli-tools/clis/README"
+          "id": "08-terminal-cli-tools/clis/README"
         }
       }
     ]
