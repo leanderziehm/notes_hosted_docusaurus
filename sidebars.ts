@@ -36,11 +36,12 @@ const sidebars: SidebarsConfig = {
   },
   {
     "type": "category",
-    "label": "02-Projects",
+    "label": "Projects",
     "collapsed": true,
     "items": [
-      "02-projects/project-personal-tracker",
-      "02-projects/deployed-projects"
+      "projects/mini-tasks-project-ideas",
+      "projects/deployed-projects",
+      "projects/project-personal-tracker"
     ]
   },
   {
@@ -112,6 +113,8 @@ const sidebars: SidebarsConfig = {
     "label": "05-Linux",
     "collapsed": true,
     "items": [
+      "05-linux/linux-users",
+      "05-linux/linux-encryption-secrets-passwords",
       "05-linux/linux-workflow",
       "05-linux/linux-ip",
       "05-linux/linux-commands",
@@ -120,7 +123,6 @@ const sidebars: SidebarsConfig = {
       "05-linux/page-2",
       "05-linux/linux-journal",
       "05-linux/linux-folders-and-logs",
-      "05-linux/linux-users",
       "05-linux/network-devices",
       "05-linux/linux-proxy",
       "05-linux/page-1",
@@ -137,16 +139,15 @@ const sidebars: SidebarsConfig = {
           "id": "05-linux/other/README"
         }
       },
-      "05-linux/linux-process-memory",
-      "05-linux/linux-encryption-secrets-passwords"
+      "05-linux/linux-process-memory"
     ]
   },
   {
     "type": "category",
-    "label": "06-Reverse-Engineering",
+    "label": "Reverse-Engineering",
     "collapsed": true,
     "items": [
-      "06-reverse-engineering/ghidra"
+      "reverse-engineering/ghidra"
     ]
   },
   {
