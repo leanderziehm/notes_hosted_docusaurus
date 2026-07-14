@@ -139,7 +139,8 @@ const sidebars: SidebarsConfig = {
           "id": "05-linux/other/README"
         }
       },
-      "05-linux/linux-process-memory"
+      "05-linux/linux-process-memory",
+      "05-linux/linux-stats-info"
     ]
   },
   {
