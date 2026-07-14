@@ -370,7 +370,7 @@ const sidebars: SidebarsConfig = {
         "label": "Geography",
         "collapsed": true,
         "items": [
-          "world-knowlege/geography/eu-europe"
+          "world-knowlege/geography/eu-member-states-vs-europe"
         ],
         "link": {
           "type": "doc",
