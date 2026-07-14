@@ -136,7 +136,17 @@ const sidebars: SidebarsConfig = {
           "type": "doc",
           "id": "linux/other/README"
         }
-      }
+      },
+      "linux/linux-process-memory",
+      "linux/linux-encryption-secrets-passwords"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Reverse-Engineering",
+    "collapsed": true,
+    "items": [
+      "reverse-engineering/ghidra"
     ]
   },
   {
