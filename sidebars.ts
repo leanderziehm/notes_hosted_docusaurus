@@ -145,14 +145,6 @@ const sidebars: SidebarsConfig = {
   },
   {
     "type": "category",
-    "label": "Reverse-Engineering",
-    "collapsed": true,
-    "items": [
-      "reverse-engineering/ghidra"
-    ]
-  },
-  {
-    "type": "category",
     "label": "07-Networking",
     "collapsed": true,
     "items": [
@@ -227,40 +219,45 @@ const sidebars: SidebarsConfig = {
   },
   {
     "type": "category",
-    "label": "10-Cloud",
+    "label": "10-Computer-Science-Concepts",
     "collapsed": true,
     "items": [
-      "10-cloud/aws",
-      "10-cloud/azure",
-      "10-cloud/google-cloud-platform",
-      "10-cloud/oracle",
-      "10-cloud/cloudflare",
-      "10-cloud/supabase",
-      "10-cloud/github-actions"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "CS-Concepts",
-    "collapsed": true,
-    "items": [
-      "cs-concepts/databases",
-      "cs-concepts/compilers",
-      "cs-concepts/errors",
-      "cs-concepts/input-validation",
+      {
+        "type": "category",
+        "label": "Cloud",
+        "collapsed": true,
+        "items": [
+          "10-computer-science-concepts/cloud/aws",
+          "10-computer-science-concepts/cloud/azure",
+          "10-computer-science-concepts/cloud/google-cloud-platform",
+          "10-computer-science-concepts/cloud/oracle",
+          "10-computer-science-concepts/cloud/cloudflare",
+          "10-computer-science-concepts/cloud/supabase",
+          "10-computer-science-concepts/cloud/github-actions"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "10-computer-science-concepts/cloud/README"
+        }
+      },
+      "10-computer-science-concepts/eponymous-laws",
+      "10-computer-science-concepts/databases",
+      "10-computer-science-concepts/compilers",
+      "10-computer-science-concepts/errors",
+      "10-computer-science-concepts/input-validation",
       {
         "type": "category",
         "label": "File formats",
         "collapsed": true,
         "items": [
-          "cs-concepts/file-formats/makefile",
-          "cs-concepts/file-formats/yaml",
-          "cs-concepts/file-formats/json",
-          "cs-concepts/file-formats/html"
+          "10-computer-science-concepts/file-formats/makefile",
+          "10-computer-science-concepts/file-formats/yaml",
+          "10-computer-science-concepts/file-formats/json",
+          "10-computer-science-concepts/file-formats/html"
         ],
         "link": {
           "type": "doc",
-          "id": "cs-concepts/file-formats/README"
+          "id": "10-computer-science-concepts/file-formats/README"
         }
       },
       {
@@ -268,27 +265,27 @@ const sidebars: SidebarsConfig = {
         "label": "Application Layer Protocolls",
         "collapsed": true,
         "items": [
-          "cs-concepts/application-layer-protocolls/openapi",
-          "cs-concepts/application-layer-protocolls/graphql",
-          "cs-concepts/application-layer-protocolls/media-types",
+          "10-computer-science-concepts/application-layer-protocolls/openapi",
+          "10-computer-science-concepts/application-layer-protocolls/graphql",
+          "10-computer-science-concepts/application-layer-protocolls/media-types",
           {
             "type": "category",
             "label": "7 HTTP(S)",
             "collapsed": true,
             "items": [
-              "cs-concepts/application-layer-protocolls/http/http-status-codes",
-              "cs-concepts/application-layer-protocolls/http/http-methos",
-              "cs-concepts/application-layer-protocolls/http/http-headers-security"
+              "10-computer-science-concepts/application-layer-protocolls/http/http-status-codes",
+              "10-computer-science-concepts/application-layer-protocolls/http/http-methos",
+              "10-computer-science-concepts/application-layer-protocolls/http/http-headers-security"
             ],
             "link": {
               "type": "doc",
-              "id": "cs-concepts/application-layer-protocolls/http/README"
+              "id": "10-computer-science-concepts/application-layer-protocolls/http/README"
             }
           }
         ],
         "link": {
           "type": "doc",
-          "id": "cs-concepts/application-layer-protocolls/README"
+          "id": "10-computer-science-concepts/application-layer-protocolls/README"
         }
       },
       {
@@ -296,13 +293,13 @@ const sidebars: SidebarsConfig = {
         "label": "System Design",
         "collapsed": true,
         "items": [
-          "cs-concepts/system-design/database",
-          "cs-concepts/system-design/cache",
-          "cs-concepts/system-design/queue"
+          "10-computer-science-concepts/system-design/database",
+          "10-computer-science-concepts/system-design/cache",
+          "10-computer-science-concepts/system-design/queue"
         ],
         "link": {
           "type": "doc",
-          "id": "cs-concepts/system-design/README"
+          "id": "10-computer-science-concepts/system-design/README"
         }
       },
       {
@@ -310,12 +307,12 @@ const sidebars: SidebarsConfig = {
         "label": "Design-Patterns",
         "collapsed": true,
         "items": [
-          "cs-concepts/design-patterns/design-patterns",
-          "cs-concepts/design-patterns/ports-and-adapters"
+          "10-computer-science-concepts/design-patterns/design-patterns",
+          "10-computer-science-concepts/design-patterns/ports-and-adapters"
         ],
         "link": {
           "type": "doc",
-          "id": "cs-concepts/design-patterns/README"
+          "id": "10-computer-science-concepts/design-patterns/README"
         }
       },
       {
@@ -323,11 +320,11 @@ const sidebars: SidebarsConfig = {
         "label": "HCI",
         "collapsed": true,
         "items": [
-          "cs-concepts/hci/latency-perception"
+          "10-computer-science-concepts/hci/latency-perception"
         ],
         "link": {
           "type": "doc",
-          "id": "cs-concepts/hci/README"
+          "id": "10-computer-science-concepts/hci/README"
         }
       },
       {
@@ -335,29 +332,70 @@ const sidebars: SidebarsConfig = {
         "label": "Datascience",
         "collapsed": true,
         "items": [
-          "cs-concepts/datascience/coding",
-          "cs-concepts/datascience/excel",
-          "cs-concepts/datascience/forcasting",
-          "cs-concepts/datascience/duckdb",
-          "cs-concepts/datascience/etl",
-          "cs-concepts/datascience/databricks",
-          "cs-concepts/datascience/data-science-tools",
-          "cs-concepts/datascience/bi-dashboard-tools"
+          "10-computer-science-concepts/datascience/coding",
+          "10-computer-science-concepts/datascience/excel",
+          "10-computer-science-concepts/datascience/forcasting",
+          "10-computer-science-concepts/datascience/duckdb",
+          "10-computer-science-concepts/datascience/etl",
+          "10-computer-science-concepts/datascience/databricks",
+          "10-computer-science-concepts/datascience/data-science-tools",
+          "10-computer-science-concepts/datascience/bi-dashboard-tools"
         ],
         "link": {
           "type": "doc",
-          "id": "cs-concepts/datascience/README"
+          "id": "10-computer-science-concepts/datascience/README"
+        }
+      },
+      {
+        "type": "category",
+        "label": "AI",
+        "collapsed": true,
+        "items": [
+          "10-computer-science-concepts/ai/ai-llms",
+          "10-computer-science-concepts/ai/voice-and-video",
+          "10-computer-science-concepts/ai/ai-web-app-creators"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "10-computer-science-concepts/ai/README"
+        }
+      },
+      {
+        "type": "category",
+        "label": "OS",
+        "collapsed": true,
+        "items": [
+          "10-computer-science-concepts/os/windows",
+          {
+            "type": "category",
+            "label": "Android",
+            "collapsed": true,
+            "items": [
+              "10-computer-science-concepts/os/android/android-app-termux"
+            ],
+            "link": {
+              "type": "doc",
+              "id": "10-computer-science-concepts/os/android/README"
+            }
+          }
+        ],
+        "link": {
+          "type": "doc",
+          "id": "10-computer-science-concepts/os/README"
+        }
+      },
+      {
+        "type": "category",
+        "label": "Reverse-Engineering",
+        "collapsed": true,
+        "items": [
+          "10-computer-science-concepts/reverse-engineering/ghidra"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "10-computer-science-concepts/reverse-engineering/README"
         }
       }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Problem Solving",
-    "collapsed": true,
-    "items": [
-      "problem-solving/problem-solving",
-      "problem-solving/reasoning"
     ]
   },
   {
@@ -393,7 +431,20 @@ const sidebars: SidebarsConfig = {
         }
       },
       "world-knowlege/immune-system",
-      "world-knowlege/historic-tool-invention"
+      "world-knowlege/historic-tool-invention",
+      {
+        "type": "category",
+        "label": "Skills",
+        "collapsed": true,
+        "items": [
+          "world-knowlege/skills/reasoning",
+          "world-knowlege/skills/problem-solving"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "world-knowlege/skills/README"
+        }
+      }
     ]
   },
   {
@@ -401,45 +452,8 @@ const sidebars: SidebarsConfig = {
     "label": "Personal",
     "collapsed": true,
     "items": [
-      "personal/keyboard-shortcuts"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "AI",
-    "collapsed": true,
-    "items": [
-      "ai/ai-web-app-creators",
-      "ai/voice-and-video",
-      "ai/ai-llms"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "OS",
-    "collapsed": true,
-    "items": [
-      "os/windows",
-      {
-        "type": "category",
-        "label": "Android",
-        "collapsed": true,
-        "items": [
-          "os/android/android-app-termux"
-        ],
-        "link": {
-          "type": "doc",
-          "id": "os/android/README"
-        }
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Eponymous-Laws",
-    "collapsed": true,
-    "items": [
-      "eponymous-laws/eponymous-laws"
+      "personal/keyboard-shortcuts",
+      "personal/inventory"
     ]
   }
 ]
