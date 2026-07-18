@@ -115,6 +115,7 @@ const sidebars: SidebarsConfig = {
     "items": [
       "05-linux/linux-users",
       "05-linux/linux-encryption-secrets-passwords",
+      "05-linux/virtualization",
       "05-linux/linux-workflow",
       "05-linux/linux-ip",
       "05-linux/linux-commands",
@@ -131,8 +132,7 @@ const sidebars: SidebarsConfig = {
         "label": "Other Linux Topics",
         "collapsed": true,
         "items": [
-          "05-linux/other/suspend-mode",
-          "05-linux/other/virtualization"
+          "05-linux/other/suspend-mode"
         ],
         "link": {
           "type": "doc",
