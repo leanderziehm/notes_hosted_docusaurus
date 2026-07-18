@@ -104,8 +104,7 @@ const sidebars: SidebarsConfig = {
       "04-system-administration/nginx",
       "04-system-administration/firewall",
       "04-system-administration/postgesql-on-linux",
-      "04-system-administration/grafana-stack",
-      "04-system-administration/elastic-search-elk-stack"
+      "04-system-administration/cloud"
     ]
   },
   {
@@ -222,24 +221,6 @@ const sidebars: SidebarsConfig = {
     "label": "10-Computer-Science-Concepts",
     "collapsed": true,
     "items": [
-      {
-        "type": "category",
-        "label": "Cloud",
-        "collapsed": true,
-        "items": [
-          "10-computer-science-concepts/cloud/aws",
-          "10-computer-science-concepts/cloud/azure",
-          "10-computer-science-concepts/cloud/google-cloud-platform",
-          "10-computer-science-concepts/cloud/oracle",
-          "10-computer-science-concepts/cloud/cloudflare",
-          "10-computer-science-concepts/cloud/supabase",
-          "10-computer-science-concepts/cloud/github-actions"
-        ],
-        "link": {
-          "type": "doc",
-          "id": "10-computer-science-concepts/cloud/README"
-        }
-      },
       "10-computer-science-concepts/eponymous-laws",
       "10-computer-science-concepts/databases",
       "10-computer-science-concepts/compilers",
